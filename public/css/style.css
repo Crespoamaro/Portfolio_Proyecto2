@@ -1,132 +1,242 @@
 /* Estilos generales para la página */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
-    color: #333;
-    line-height: 1.6;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
-  
-  /* Estilo para el encabezado */
+
+/* Estilo para el encabezado */
 h1 {
-    color: #444;
-    text-align: center;
-    margin-top: 50px;
-    font-size: 36px;
-    font-weight: bold;
-    text-transform: uppercase;
+  color: #444;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
-  
-  /* Estilo para la descripción de bienvenida */
+
+/* Estilo para la descripción de bienvenida */
 p {
-    text-align: center;
-    font-size: 18px;
-    color: #666;
-    margin: 20px auto;
-    max-width: 600px;
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  margin: 20px auto;
+  max-width: 600px;
 }
-  
-  /* Estilo para las listas de miembros */
+
+/* Sección de introducción */
+.intro-section {
+  text-align: center;
+  margin: 40px 20px;
+}
+
+.intro-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Estilo para las listas de miembros */
 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px auto;
-    max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-  
-  /* Estilo para los elementos de la lista */
+
+/* Estilo para los elementos de la lista */
 li {
-    background-color: #fff;
-    margin: 15px 0;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 800px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-  
-  /* Efecto hover para los elementos de la lista */
+
+/* Efecto hover para los elementos de la lista */
 li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
-  
-  /* Estilo para los encabezados dentro de los miembros */
+
+/* Estilo para los encabezados dentro de los miembros */
 li strong {
-    font-size: 20px;
-    color: #333;
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
+  font-size: 20px;
+  color: #333;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
-  
-  /* Estilo para las secciones dentro de los miembros */
+
+/* Estilo para las secciones dentro de los miembros */
 li em {
-    font-style: italic;
-    color: #555;
+  font-style: italic;
+  color: #555;
 }
-  
-  /* Estilo para las tecnologías, idiomas y proyectos */
+
+/* Estilo para las tecnologías, idiomas y proyectos */
 li .tech,
 li .languages,
 li .projects {
-    margin-top: 8px;
+  margin-top: 8px;
 }
-  
-  /* Línea divisoria entre miembros */
+
+/* Línea divisoria entre miembros */
 hr {
-    border: 0;
-    border-top: 2px solid #eee;
-    margin-top: 15px;
-    margin-bottom: 15px;
+  border: 0;
+  border-top: 2px solid #eee;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-  
-  /* Estilo para los enlaces */
+
+/* Estilo para los enlaces */
 a {
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    margin-top: 30px;
-    font-size: 18px;
-    padding: 10px;
-    border: 2px solid #007BFF;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+  padding: 10px;
+  border: 2px solid #007BFF;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-  
-  /* Efecto hover para el enlace */
+
+/* Efecto hover para el enlace */
 a:hover {
-    background-color: #007BFF;
-    color: white;
+  background-color: #007BFF;
+  color: white;
 }
-  
-  /* Estilo para la página cuando no haya miembros */
+
+/* Estilo para la página cuando no haya miembros */
 .no-members {
-    text-align: center;
-    font-size: 20px;
-    color: #888;
-    margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: #888;
+  margin-top: 20px;
 }
-  
-  /* Estilos para los botones si es necesario */
+
+/* Estilos para los botones */
 button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
-  
+
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #444;
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px; 
+}
+
+/* Estilo para la imagen de los miembros */
+.member-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* --- Estilos Responsive --- */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 15px auto;
+    max-width: 90%;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    padding: 15px;
+    margin: 10px 0;
+    max-width: 90%;
+  }
+
+  .member-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  a {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .intro-section img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Para pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  li {
+    max-width: 90%;
+  }
+
+  .member-image {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+/* Para pantallas grandes (escritorios) */
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  li {
+    max-width: 800px;
+  }
+
+  .member-image {
+    width: 150px;
+    height: 150px;
+  }
 }

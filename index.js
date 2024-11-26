@@ -4,14 +4,14 @@ const exphbs = require('express-handlebars');
 
 const app = express();
 const PORT = 3000;
+
+// Servir archivos estáticos (CSS, imágenes, JS) desde la carpeta 'public'
 app.use(express.static('public'));
+
 // Configuración de Handlebars
 app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
 app.set('views', './views'); // Carpeta donde están las vistas
-
-// Servir archivos estáticos (CSS)
-app.use(express.static('public'));
 
 // Ruta raíz ("/") para la página principal
 app.get('/', (req, res) => {
