@@ -40,11 +40,10 @@ body {
   margin-top: 20px;
 }
 
-<<<<<<< HEAD
 /* Estilo para los miembros */
 ul {
   list-style-type: none;
-=======
+}
 /* Sección de servicios */
 .seccion-servicios ul {
   list-style: none;
@@ -96,7 +95,6 @@ ul {
 /* Sección de miembros */
 .lista-miembros {
   list-style: none;
->>>>>>> 7c368386971fb73737f50ed4a7af2a041d85cfb7
   padding: 0;
   margin: 20px auto;
   max-width: 900px;
@@ -122,7 +120,6 @@ ul {
   margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
 /* Nueva clase para centrar la imagen */
 .centered-image-container {
   display: flex;
@@ -132,13 +129,10 @@ ul {
 }
 
 /* --- Estilos Responsive --- */
-=======
 .elemento-miembro strong {
   font-size: 20px;
   font-weight: bold;
 }
->>>>>>> 7c368386971fb73737f50ed4a7af2a041d85cfb7
-
 .elemento-miembro em {
   font-style: italic;
   color: #555;
