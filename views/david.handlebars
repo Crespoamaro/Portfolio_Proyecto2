@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{title}}</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/Portfolio_Proyecto2/public/css/style.css">
 </head>
 <body>
   <header>
@@ -15,7 +15,8 @@
     <section class="profile-section">
       <!-- Contenedor para centrar la imagen -->
       <div class="centered-image-container">
-        <img src="{{miembro.imagen_url}}" alt="Foto de {{miembro.nombre}} {{miembro.apellidos}}" class="member-image">
+        <!-- Usa la ruta adecuada para las imágenes -->
+        <img src="/Portfolio_Proyecto2/public/images/{{miembro.nombre}}_{{miembro.apellidos}}.jpg" alt="Foto de {{miembro.nombre}} {{miembro.apellidos}}" class="member-image">
       </div>
       <p><strong>Fecha de nacimiento:</strong> {{miembro.fecha_nacimiento}}</p>
       <p><strong>Titulación:</strong> {{miembro.titulacion}}</p>
