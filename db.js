@@ -2,12 +2,11 @@ const mysql = require('mysql2');
 
 // Crear una conexión a la base de datos
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',  // Usuario de MySQL
-    password: '',  // Contraseña vacía si no tienes una
-    database: 'portfolio_db'
+  host: 'localhost',
+  user: 'root',  // Usuario de MySQL
+  password: '',  // Contraseña vacía si no tienes una
+  database: 'portfolio_db'  // Nombre de la base de datos
 });
-  
 
 // Verificar la conexión
 connection.connect((err) => {

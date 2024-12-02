@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/css/style.css"> 
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <h1>Nuestros Trabajos</h1>
+    <p>Explora algunos de los proyectos más destacados realizados por nuestro equipo.</p>
+  </div>
+</header>
+
+<main>
+  <section class="trabajos-section">
+    <ul>
+      {{#if trabajos.length}}
+        {{#each trabajos}}
+        <li>
+          <h2>{{titulo}}</h2>
+          <p><strong>Empresa:</strong> {{empresa}}</p>
+          <p><strong>Descripción:</strong> {{descripcion}}</p>
+          <p><strong>Tecnologías utilizadas:</strong> {{tecnologias_utilizadas}}</p>
+        </li>
+        <hr>
+        {{/each}}
+      {{else}}
+        <p class="no-works">No hay trabajos disponibles en este momento. Vuelve pronto para ver más proyectos.</p>
+      {{/if}}
+    </ul>
+  </section>
+
+  <!-- Enlace para volver a la página principal -->
+  <a href="/" class="button">Volver a la página principal</a>
+</main>
+
+<footer>
+</footer>
+</body>
+</html>

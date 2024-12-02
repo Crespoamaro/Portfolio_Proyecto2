@@ -45,7 +45,7 @@ p {
   margin-top: 20px;
 }
 
-/* Estilo para las listas de miembros */
+/* Estilo para los miembros */
 ul {
   list-style-type: none;
   padding: 0;
@@ -166,6 +166,14 @@ h2 {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 10px;
+}
+
+/* Nueva clase para centrar la imagen */
+.centered-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Espacio opcional */
 }
 
 /* --- Estilos Responsive --- */
