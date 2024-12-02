@@ -1,6 +1,7 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
 const path = require('path');
+
 const connection = require('./db'); // Importa la conexión a la base de datos
 const fs = require('fs'); // Módulo para verificar la existencia de archivos
 
