@@ -1,4 +1,4 @@
-/* Estilos generales para la página */
+/* Estilos generales */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -12,231 +12,172 @@ body {
   min-height: 100vh;
 }
 
-/* Estilo para el encabezado */
-h1 {
-  color: #444;
+/* Encabezado */
+.contenedor-encabezado {
+  background-color: #007BFF;
+  color: #fff;
   text-align: center;
-  margin-top: 50px;
-  font-size: 36px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  padding: 20px;
 }
 
-/* Estilo para la descripción de bienvenida */
-p {
-  text-align: center;
-  font-size: 18px;
-  color: #666;
-  margin: 20px auto;
-  max-width: 600px;
+.contenedor-encabezado h1 {
+  font-size: 36px;
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* Sección de introducción */
-.intro-section {
+.seccion-intro {
   text-align: center;
   margin: 40px 20px;
 }
 
-.intro-section img {
+.seccion-intro img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
   margin-top: 20px;
 }
 
-/* Estilo para las listas de miembros */
-ul {
-  list-style-type: none;
+/* Sección de servicios */
+.seccion-servicios ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.seccion-servicios li {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Sección del equipo */
+.seccion-equipo {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #e9ecef;
+}
+
+.seccion-equipo p {
+  font-size: 18px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.boton {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: #0056b3;
+}
+
+/* Sección de miembros */
+.lista-miembros {
+  list-style: none;
   padding: 0;
   margin: 20px auto;
   max-width: 900px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-/* Estilo para los elementos de la lista */
-li {
+.elemento-miembro {
   background-color: #fff;
   margin: 15px 0;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 800px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Efecto hover para los elementos de la lista */
-li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilo para los encabezados dentro de los miembros */
-li strong {
-  font-size: 20px;
-  color: #333;
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-/* Estilo para las secciones dentro de los miembros */
-li em {
-  font-style: italic;
-  color: #555;
-}
-
-/* Estilo para las tecnologías, idiomas y proyectos */
-li .tech,
-li .languages,
-li .projects {
-  margin-top: 8px;
-}
-
-/* Línea divisoria entre miembros */
-hr {
-  border: 0;
-  border-top: 2px solid #eee;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-/* Estilo para los enlaces */
-a {
-  color: #007BFF;
-  text-decoration: none;
-  font-weight: bold;
-  display: block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin-top: 30px;
-  font-size: 18px;
-  padding: 10px;
-  border: 2px solid #007BFF;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Efecto hover para el enlace */
-a:hover {
-  background-color: #007BFF;
-  color: white;
-}
-
-/* Estilo para la página cuando no haya miembros */
-.no-members {
-  text-align: center;
-  font-size: 20px;
-  color: #888;
-  margin-top: 20px;
-}
-
-/* Estilos para los botones */
-button {
-  background-color: #007BFF;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-h2 {
-  text-align: center;
-  font-size: 28px;
-  color: #444;
-  margin: 20px 0;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-/* Estilo para la imagen de los miembros */
-.member-image {
-  width: 150px;
-  height: 150px;
+.imagen-miembro {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 10px;
 }
 
-/* --- Estilos Responsive --- */
+.elemento-miembro strong {
+  font-size: 20px;
+  font-weight: bold;
+}
 
-/* Para pantallas pequeñas (móviles) */
+.elemento-miembro em {
+  font-style: italic;
+  color: #555;
+}
+
+/* Sección de contacto */
+.seccion-contacto {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.seccion-contacto h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.seccion-contacto p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+/* Estilos responsivos */
 @media (max-width: 768px) {
-  h1 {
+  .contenedor-encabezado h1 {
     font-size: 28px;
-    margin-top: 30px;
   }
 
-  p {
-    font-size: 16px;
-    margin: 15px auto;
-    max-width: 90%;
+  .seccion-intro img,
+  .imagen-miembro {
+    width: 100px;
+    height: 100px;
   }
 
-  ul {
-    padding: 0;
-  }
-
-  li {
-    padding: 15px;
-    margin: 10px 0;
-    max-width: 90%;
-  }
-
-  .member-image {
-    width: 120px;
-    height: 120px;
-  }
-
-  a {
-    font-size: 16px;
-    padding: 8px;
-  }
-
-  .intro-section img {
-    width: 100%;
-    height: auto;
+  .boton {
+    font-size: 14px;
+    padding: 8px 15px;
   }
 }
 
-/* Para pantallas medianas (tabletas) */
 @media (max-width: 1024px) {
-  h1 {
+  .contenedor-encabezado h1 {
     font-size: 32px;
   }
 
-  li {
-    max-width: 90%;
-  }
-
-  .member-image {
-    width: 130px;
-    height: 130px;
-  }
-}
-
-/* Para pantallas grandes (escritorios) */
-@media (min-width: 1025px) {
-  h1 {
-    font-size: 36px;
-  }
-
-  li {
-    max-width: 800px;
-  }
-
-  .member-image {
-    width: 150px;
-    height: 150px;
+  .imagen-miembro {
+    width: 110px;
+    height: 110px;
   }
 }
