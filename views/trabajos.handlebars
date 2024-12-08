@@ -1,39 +1,40 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!-- Indica que el idioma del contenido es español -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{title}}</title>
-  <link rel="stylesheet" href="/Portfolio_Proyecto2/public/css/style.css"> 
+  <meta charset="UTF-8"> <!-- Configura el conjunto de caracteres para admitir caracteres especiales -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el sitio sea adaptable en dispositivos móviles -->
+  <title>{{title}}</title> <!-- Usa el título dinámico proporcionado desde el servidor -->
+  <link rel="stylesheet" href="/Portfolio_Proyecto2/public/css/style.css"> <!-- Enlace al archivo CSS para estilos -->
 </head>
 <body>
 <header>
-  <div class="header-container">
+  <div class="header-container"> 
     <h1>Nuestros Trabajos</h1>
     <p>Explora algunos de los proyectos más destacados realizados por nuestro equipo.</p>
   </div>
 </header>
 <main>
-  <section class="trabajos-section">
+  <section class="trabajos-section"> 
     <ul>
+      <!-- Condicional para verificar si existen trabajos en la lista -->
       {{#if trabajos.length}}
+        <!-- Itera sobre cada trabajo en la lista 'trabajos' proporcionada por el servidor -->
         {{#each trabajos}}
         <li>
-          <h2>{{titulo}}</h2>
-          <p><strong>Empresa:</strong> {{empresa}}</p>
-          <p><strong>Descripción:</strong> {{descripcion}}</p>
-          <p><strong>Tecnologías utilizadas:</strong> {{tecnologias_utilizadas}}</p>
+          <h2>{{titulo}}</h2> 
+          <p><strong>Empresa:</strong> {{empresa}}</p> 
+          <p><strong>Descripción:</strong> {{descripcion}}</p> 
+          <p><strong>Tecnologías utilizadas:</strong> {{tecnologias_utilizadas}}</p> 
         </li>
-        <hr>
+        <hr> 
         {{/each}}
       {{else}}
-        <p class="no-works">No hay trabajos disponibles en este momento. Vuelve pronto para ver más proyectos.</p>
+        <p class="no-trabajos">No hay trabajos disponibles en este momento. Vuelve pronto para ver más proyectos.</p>
       {{/if}}
     </ul>
   </section>
 
-  <!-- Enlace para volver a la página principal -->
-  <a href="/" class="button">Volver a la página principal</a>
+  <a href="/" class="button">Volver a la página principal</a> 
 </main>
 
 <footer>
